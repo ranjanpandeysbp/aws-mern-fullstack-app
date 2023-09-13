@@ -20,3 +20,5 @@ Click on Edit button, then it will highlight the Advanced button.
 Click on that,
 select SSH → Authentication on the left side,
 select the path of Private key file.
+--------------------Installing Forever to Run app always------
+https://www.npmjs.com/package/forever

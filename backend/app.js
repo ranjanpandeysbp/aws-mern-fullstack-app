@@ -14,7 +14,9 @@ app.get("/", (req, res) => {
 });
 
 const mongoose = require('mongoose')
-mongoose.connect(mongoPath)
+mongoose.connect(mongoPath, {
+    tlsCAFile: `global-bundle.pem` //Specify the DocDB; cert
+},)
 
 mongoose.connection.on('connected', function () {
     console.log("db connected")

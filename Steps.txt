@@ -13,3 +13,10 @@ npm --version
 sudo apt update
 sudo apt install git
 git --version
+---------------------Using WinSCP--------------
+Open Winscp
+Go to Session window, fill the details with Host name Username and password
+Click on Edit button, then it will highlight the Advanced button.
+Click on that,
+select SSH → Authentication on the left side,
+select the path of Private key file.

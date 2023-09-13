@@ -11,7 +11,7 @@ function App() {
 
   const createTask = function () {
     const data = { title: title }
-    axios.post('http://localhost:4000/tasks', data)
+    axios.post('http://ec2-13-126-245-161.ap-south-1.compute.amazonaws.com:4000/tasks', data)
       .then(function (resp) {
         console.log(resp)
         setTitle("")
@@ -23,7 +23,7 @@ function App() {
   }
 
   const getAllTasks = function () {
-    axios.get('http://localhost:4000/tasks')
+    axios.get('http://ec2-13-126-245-161.ap-south-1.compute.amazonaws.com:4000/tasks')
       .then(function (response) {
         console.log(response)
         setTasks(response.data.alltasks)

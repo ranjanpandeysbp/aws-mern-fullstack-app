@@ -3,7 +3,7 @@ import axios from 'axios'
 
 function Task(props) {
     const getAllTasks = function () {
-        axios.get('http://localhost:4000/tasks')
+        axios.get('http://ec2-13-126-245-161.ap-south-1.compute.amazonaws.com:4000/tasks')
             .then(function (response) {
                 console.log(response)
                 props.setTasks(response.data.alltasks)
@@ -13,7 +13,7 @@ function Task(props) {
             })
     }
     const deleteTask = function (taskId) {
-        axios.delete(`http://localhost:4000/tasks/${taskId}`)
+        axios.delete(`http://ec2-13-126-245-161.ap-south-1.compute.amazonaws.com:4000/tasks/${taskId}`)
             .then(function (resp) {
                 console.log(resp)
                 getAllTasks()

@@ -1,0 +1,15 @@
+1. Make sure to have your frontend and backend code in one root folder
+2. Create an .env file in the root of your backend and specify your DB url
+3. If you get legacy code issue then run below command
+set NODE_OPTIONS=--openssl-legacy-provider
+export NODE_OPTIONS=--openssl-legacy-provider
+
+---------Installing Node & NPM on EC2 machine------------------------
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install nodejs
+node --version
+npm --version
+-------------------Installing GIT on EC2 machine----------------------
+sudo apt update
+sudo apt install git
+git --version
